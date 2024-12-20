@@ -31,7 +31,7 @@ function Navbar() {
             <Link to={'/'}>{t("The Highlands")}</Link>
           </li>
           <li>
-            <Link to={'/'}>{t("Stories")}</Link>
+            <Link to={'/Stories/'}>{t("Stories")}</Link>
           </li>
           <li>
             <Link to={'/'}>{t("The Bazaar")}</Link>
