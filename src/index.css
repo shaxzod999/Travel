@@ -1,0 +1,506 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: auto;
+  overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: caudex, serif !important;
+}
+a {
+  cursor: pointer;
+}
+.navbar-small-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1560px;
+  margin: 40px auto;
+}
+.big-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-bg-img {
+  background-image: url("./assets/bg-img/firstsection-bg-img.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+ul li:hover {
+  color: rgb(215, 116, 49);
+}
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s ease !important;
+  position: sticky;
+  z-index: 9999;
+}
+
+.navbar.fixed {
+  transition: all 0.3s ease !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.group:hover .language-menu {
+  display: block;
+}
+.language-menu {
+  display: none;
+}
+.footer-btn button {
+  position: absolute;
+  width: 135px;
+  height: 35px;
+  transition: 0.2s;
+  font-size: 17px;
+  font-weight: 100 !important;
+}
+.footer-btn {
+  position: relative;
+  width: 100px;
+  height: 35px;
+  transition: 0.3s;
+}
+.footer-btn button:hover {
+  transition: 0.2s;
+  background-color: #fff;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+footer {
+  background: rgb(245, 247, 245);
+}
+
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4zfKBv70OEg.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUnp8DOJKuGPLB.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8NMpWMGsLAjdA.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKPtbosEJimIMs.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4wfKBv70OEqin.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUkZ8DOJKuGPLB.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8CMpWMGsLAjdA.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKAtbosEJimIMs.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4zvKBv70OEqin.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUnJ8DOJKuGPLB.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8PMpWMGsLAjdA.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKNtbosEJimIMs.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4w_KBv70OEqin.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUkp8DOJKuGA.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8BMpWMGsLA.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKDtbosEJim.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4zfKBv70OEg.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  font-display: swap;
+}
+/* @font-face {
+  font-family: "brandon-grot-w01-light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/fonts/v2/fe0edf38-314c-46d5-b570-a37546d197e4/v1/brandon-grot-w05-light.woff2")
+    format("woff2");
+  unicode-range: U+0100-0130, U+0132-0151, U+0154-015F, U+0162-0177, U+0179-017C,
+    U+01FA-01FF, U+0218-021B, U+0237, U+02C7, U+02C9, U+02D8-02DB, U+02DD,
+    U+037E, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE, U+0400-045F,
+    U+0490-0491, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+2044, U+2070, U+2074-2079,
+    U+2080-2089, U+20B4, U+20BD, U+2113, U+2117, U+2126, U+212E, U+2153-2154,
+    U+215B-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A,
+    U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF, U+FB01-FB02;
+  font-display: swap;
+}
+@font-face {
+  font-family: "brandon-grot-w01-light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/fonts/v2/fe0edf38-314c-46d5-b570-a37546d197e4/v1/brandon-grot-w01-light.woff2")
+    format("woff2");
+  unicode-range: U+0002, U+0009-000A, U+000D, U+0020-007E, U+00A0-00FF, U+0131,
+    U+0152-0153, U+0160-0161, U+0178, U+017D-017E, U+0192, U+02C6, U+02DC,
+    U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030,
+    U+2039-203A, U+20AC, U+2122;
+  font-display: swap;
+}
+@font-face {
+  font-family: "din-next-w01-light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/fonts/v2/eca8b0cd-45d8-43cf-aee7-ca462bc5497c/v1/din-next-w10-light.woff2")
+    format("woff2");
+  unicode-range: U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491,
+    U+2116;
+  font-display: swap;
+}
+@font-face {
+  font-family: "din-next-w01-light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/fonts/v2/eca8b0cd-45d8-43cf-aee7-ca462bc5497c/v1/din-next-w02-light.woff2")
+    format("woff2");
+  unicode-range: U+000D, U+0100-010F, U+0111-0130, U+0132-0151, U+0154-015F,
+    U+0162-0177, U+0179-017C, U+01FA-01FF, U+0218-021B, U+0237, U+02C9,
+    U+02D8-02D9, U+02DB, U+02DD, U+0394, U+03A9, U+03C0, U+1E80-1E85,
+    U+1EF2-1EF3, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2126, U+212E,
+    U+2153-2154, U+215B-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
+    U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF,
+    U+FB00-FB04;
+  font-display: swap;
+}
+@font-face {
+  font-family: "din-next-w01-light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/fonts/v2/eca8b0cd-45d8-43cf-aee7-ca462bc5497c/v1/din-next-w01-light.woff2")
+    format("woff2");
+  unicode-range: U+0020-007E, U+00A0-00FF, U+0110, U+0131, U+0152-0153,
+    U+0160-0161, U+0178, U+017D-017E, U+0192, U+02C6-02C7, U+02DA, U+02DC,
+    U+03BC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030,
+    U+2039-203A, U+2044, U+20AC, U+2122;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inknut antiqua";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/inknutantiqua/v14/Y4GRYax7VC4ot_qNB4nYpBdaKU2_xYj_ZhsqY4NemP8.woff2")
+    format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0,
+    U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inknut antiqua";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/inknutantiqua/v14/Y4GSYax7VC4ot_qNB4nYpBdaKUUF4J3TRBYAWYo.woff2")
+    format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0,
+    U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inknut antiqua";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/inknutantiqua/v14/Y4GRYax7VC4ot_qNB4nYpBdaKU2_xYjwZhsqY4NemP8.woff2")
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inknut antiqua";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/inknutantiqua/v14/Y4GSYax7VC4ot_qNB4nYpBdaKUUK4J3TRBYAWYo.woff2")
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inknut antiqua";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/inknutantiqua/v14/Y4GRYax7VC4ot_qNB4nYpBdaKU2_xYj-ZhsqY4Ne.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inknut antiqua";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/inknutantiqua/v14/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4J3TRBYA.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUnp8DOJKuGPLB.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8NMpWMGsLAjdA.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKPtbosEJimIMs.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4wfKBv70OEqin.woff2")
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUkZ8DOJKuGPLB.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8CMpWMGsLAjdA.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKAtbosEJimIMs.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4zvKBv70OEqin.woff2")
+    format("woff2");
+  unicode-range: U+0370-03FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUnJ8DOJKuGPLB.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDV311QOP6BJUr4yMo4kK8PMpWMGsLAjdA.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: italic;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDS311QOP6BJUr4yMKNtbosEJimIMs.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDQ311QOP6BJUr4w_KBv70OEqin.woff2")
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "caudex";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/caudex/v9/esDT311QOP6BJUrwdteUkp8DOJKuGA.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  font-display: swap;
+} */
