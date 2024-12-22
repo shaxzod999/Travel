@@ -1,6 +1,6 @@
 import React from "react";
 
-function FirstSection2() {
+function FirstSection() {
   return (
     <section className="w-full h-[auto] text-[#414141]">
       <div className="w-full h-[550px] container mx-[auto] flex items-center justify-center">
@@ -32,4 +32,4 @@ function FirstSection2() {
   );
 }
 
-export default FirstSection2;
+export default FirstSection;

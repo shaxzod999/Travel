@@ -1,12 +1,14 @@
 import React from "react";
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { Route, Router, Routes, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import TheSilkRoads from "./pages/TheSilkRoads";
-import TheSilkRoads2 from "./pages/TheSilkRoads2";
+import Card from "./components/TheSilkRoads/Card";
+import Stories from "./pages/TheSilkRoads2";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const location = useLocation();
@@ -23,14 +25,16 @@ function App() {
       navigate(`${location.pathname}?${params.toString()}`, { replace: true });
     }
   }, [i18n, location, navigate]);
-
+  
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/About/" element={<About />} />
-        <Route path="/Stories/" element={<TheSilkRoads2 />} />
+        <Route path="/Stories/" element={<Stories />} />
+        <Route path="/The-Silk-Roads/Card/" element={<Card />} />
         <Route path="/The-Silk-Roads/" element={<TheSilkRoads />} />
       </Routes>
       <Footer />

@@ -1,13 +1,13 @@
-import FirstSection2 from "../components/TheSilkRoads/FirstSection2"
-import SecondSection2 from "../components/TheSilkRoads/SecondSection2"
+import FirstSection from "../components/StoriesPage/FirstSection"
+import SecondSection from "../components/StoriesPage/SecondSection"
 
-function TheSilkRoads2() {
+function Stories() {
   return (
     <div className="pt-[110px] pb-[20px]">
-      <FirstSection2/>
-      <SecondSection2/>
+      <FirstSection/>
+      <SecondSection/>
     </div>
   )
 }
 
-export default TheSilkRoads2
+export default Stories
