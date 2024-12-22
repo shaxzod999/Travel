@@ -4,15 +4,15 @@ import img3 from "../../assets/About-section-img/86e751_bd8add4902ef4ecc87b3cb1b
 
 function PreFooter() {
   return (
-    <section className="w-full h-[auto] text-[#414141]">
-      <div className="w-full h-[800px] container mx-[auto] px-[20px] flex flex-col gap-[75px] items-center justify-center relative">
-        <div className="w-full flex items-center justify-between">
-          <img className="w-[33%] h-[420px]" src={img1} alt="" />
-          <img className="w-[33%] h-[420px]" src={img2} alt="" />
-          <img className="w-[33%] h-[420px]" src={img3} alt="" />
+    <section className="w-full h-[auto] text-[#414141] py-[20px]">
+      <div className="w-full min-h-[800px] container mx-[auto] px-[20px] flex flex-col gap-[75px] items-center justify-center relative">
+        <div className="w-full flex lg:flex-row flex-col items-center gap-[20px] lg:gap-[0] justify-between">
+          <img className="w-full lg:w-[33%] max-h-[420px]" src={img1} alt="" />
+          <img className="w-full lg:w-[33%] max-h-[420px]" src={img2} alt="" />
+          <img className="w-full lg:w-[33%] max-h-[420px]" src={img3} alt="" />
         </div>
         <h3 className="text-[24px] font-bold">The Far Lands Team</h3>
-        <div className="w-full flex items-center justify-around">
+        <div className="w-full flex items-center justify-around flex-wrap gap-[20px] lg:flex-nowrap">
           <div className="text-center flex flex-col gap-[35px] items-center justify-center">
             <h3 className="text-[25px]">Kevin</h3>
             <p className="text-[12px]">

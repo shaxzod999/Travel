@@ -12,16 +12,16 @@ function FirstSection() {
     });
   }, []);
   return (
-    <section className="w-full h-[auto] text-[#414141]">
+    <section className="w-full h-[auto] text-[#414141] mt-[20px]">
       <div className="w-full container mx-[auto] flex flex-col items-center justify-center">
-        <div className="w-full h-[765px] flex flex-col gap-[50px] items-center justify-center bg-[#E4EAEE]">
+        <div className="w-full h-[auto] lg:h-[765px] flex flex-col gap-[50px] items-center justify-center bg-[#E4EAEE]">
           <h2 className="text-center">
             <span className="underline text-[40px] italic font-bold">1</span>{" "}
             <br /> <span className="text-[30px]">Symbol of the West</span>
           </h2>
-          <div className="relative">
+          <div className="relative p-[20px]">
             <img
-              className="relative w-[700px] h-[450px] right-[60px]"
+              className="relative w-full lg:w-[700px] h-[auto] lg:h-[450px] rigth-[40px] lg:right-[60px]"
               src={img1}
               alt=""
               data-aos="fade-zoom-in"
@@ -30,7 +30,7 @@ function FirstSection() {
               data-aos-offset="0"
             />
             <img
-              className="absolute w-[280px] h-[385px] bottom-[-163px] right-[-75px] "
+              className="absolute max-w-[160px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[280px] h-[auto] lg:h-[385px] top-[50%] lg:bottom-[-163px] right-[0] lg:right-[-75px] "
               src={img2}
               alt=""
               data-aos-delay="100"
@@ -38,15 +38,15 @@ function FirstSection() {
             />
           </div>
         </div>
-        <div className="w-[84%] h-[535px] flex items-center justify-start">
-          <div className="w-[29.5%] h-[50%] flex flex-col items-start justify-start gap-[40px]">
-            <h2 className="text-[50px] font-semibold">
+        <div className="w-full lg:w-[84%] h-[auto] lg:h-[535px] flex lg:flex-row flex-col items-center justify-start">
+          <div className="w-full lg:w-[29.5%] h-[auto] lg:h-[50%] flex flex-col items-center lg:items-start justify-start gap-[10px] lg:gap-[40px] text-center lg:text-start">
+            <h2 className="w-full lg:text-start text-center text-[32px] sm:text-[50px] font-semibold mt-[100px] sm:mt-[50px] lg:mt-[0]">
               The Hagia <br /> Sophia
             </h2>
             <h4 className="text-[25px] font-medium">Istanbul, Turkey</h4>
           </div>
-          <div className="w-[70.5%] h-[50%] flex flex-col gap-[40px] items-start justify-start text-[14px]">
-            <p className="text-[14px] font-thin leading-5">
+          <div className="w-full lg:w-[70.5%] h-[auto] lg:h-[50%] flex flex-col gap-[10px] lg:gap-[40px] items-center lg:items-start justify-start text-[14px] text-center lg:text-start">
+            <p className="w-full text-[7px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-thin lg:leading-5">
               Rising splendidly from the city of Constantinople, the magnificent
               Hagia Sophia was constructed <br /> in 537 AD as a symbol of the
               Roman Empire's power; wealth, and religion. This architectural{" "}

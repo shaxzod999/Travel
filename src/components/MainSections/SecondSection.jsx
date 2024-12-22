@@ -11,17 +11,17 @@ function SecondSection() {
     });
   }, []);
   return (
-    <section className="w-full h-[auto] text-[#414141]">
+    <section className="w-full h-[auto] text-[#414141] mt-[20px]">
       <div className="w-full container mx-[auto] flex flex-col items-center justify-center">
-        <div className="w-full h-[765px] flex flex-col gap-[50px] items-center justify-center bg-[#EDE6E0]">
+        <div className="w-full h-[auto] lg:h-[765px] flex flex-col gap-[50px] items-center justify-center bg-[#EDE6E0]">
           <h2 className="text-center">
             <span className="underline text-[40px] italic font-bold">2</span>{" "}
             <br />{" "}
             <span className="text-[40px] font-bold">Grandeur in Stone</span>
           </h2>
-          <div className="relative">
+          <div className="relative p-[20px]">
             <img
-              className="relative w-[700px] h-[450px] right-[-60px]"
+              className="relative w-full lg:w-[700px] h-[auto] lg:h-[450px] lg:right-[-60px]"
               src={img1}
               alt=""
               data-aos="fade-zoom-in"
@@ -30,7 +30,7 @@ function SecondSection() {
               data-aos-offset="0"
             />
             <img
-              className="absolute w-[280px] h-[385px] bottom-[-163px] left-[-75px]"
+              className="absolute max-w-[160px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[280px] h-[auto] lg:h-[385px] top-[50%] lg:bottom-[-163px] left-[0] lg:left-[-75px]"
               src={img2}
               alt=""
               data-aos-delay="100"
@@ -38,9 +38,9 @@ function SecondSection() {
             />
           </div>
         </div>
-        <div className="w-[92.8%] h-[535px] flex items-center justify-between">
-          <div className="w-[77%] h-[50%] flex flex-col gap-[40px] items-start justify-start text-[14px]">
-            <p className="text-[14px] font-thin leading-5">
+        <div className="w-full lg:w-[92.8%] h-[auto] lg:h-[535px] flex lg:flex-row flex-col-reverse gap-[28px] items-center justify-center lg:justify-between">
+          <div className=" w-full lg:w-[77%] h-[auto] lg:h-[50%] flex flex-col gap-[10px] lg;gap-[40px] items-center lg:items-start justify-start text-[14px]">
+            <p className="w-full text-center lg:text-start text-[7px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-thin lg:leading-5">
               Nestled deep in the sandstone canyons of modern-day Jordan lies
               the majestic ancient city of <br /> Petra, once a thriving
               metropolis along the fabled Silk Road. Though not often recognized
@@ -62,14 +62,14 @@ function SecondSection() {
               developed over centuries of Silk Road trade still <br /> amazes
               visitors exploring the site today.
             </p>
-            <h4 className="w-[55.5%] font-semibold text-center">
+            <h4 className="w-full lg:w-[55.5%] font-semibold text-center">
               Visit <span className="underline">Petra</span> on the King's
               Highway
             </h4>
           </div>
-          <div className="w-[23%] h-[50%] flex flex-col items-start justify-start gap-[8px]">
-            <h2 className="text-[50px] font-semibold">Petra</h2>
-            <h4 className="text-[25px] font-medium">Jordan</h4>
+          <div className="w-full lg:w-[23%] h-[auto] lg:h-[50%] flex flex-col items-center sm:items-center md:items-center lg:items-start justify-start gap-[8px] mt-[100px] sm:mt-[50px] lg:mt-[0]">
+            <h2 className="text-[32px] lg:text-[50px] font-semibold">Petra</h2>
+            <h4 className="text-[20px] lg:text-[25px] font-medium">Jordan</h4>
           </div>
         </div>
       </div>

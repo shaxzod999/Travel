@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,33 +12,21 @@ function Footer() {
     <footer className="h-[280px] pt-[1px]">
       <div className="w-full container mx-[auto] flex flex-col items-center justify-center">
         <div className="w-full flex gap-[15px] items-center justify-center">
-          <a href="#" className="flex items-center justify-center footer-btn">
+          <Link to={'/About/'} className="flex items-center justify-center footer-btn">
             <button className="font-thin">About</button>
-          </a>
-          <a href="#" className="flex items-center justify-center footer-btn">
+          </Link>
+          <Link to={'/Stories/'} className="flex items-center justify-center footer-btn">
             <button className="font-thin">Stories</button>
-          </a>
-          <a href="#" className="flex items-center justify-center footer-btn">
+          </Link>
+          <Link to={'/'} className="flex items-center justify-center footer-btn">
             <button className="font-thin">Explore</button>
-          </a>
+          </Link>
         </div>
         <div>Logo</div>
       </div>
       <button
         onClick={openModal}
-        style={{
-          padding: "10px 20px",
-          fontSize: "16px",
-          cursor: "pointer",
-          borderRadius: "5px",
-          border: "none",
-          backgroundColor: "#007BFF",
-          color: "#fff",
-          position: "fixed",
-          bottom: "150px",
-          right: "100px",
-          zIndex: "999",
-        }}
+        className="w-[150px] py-[10px] px-[20px] text-[16px] cursor-pointer rounded-[5px] bg-blue-500 fixed bottom-[150px] right-[0] md:right-[100px] z-[999] text-[#fff]"
       >
         {t("Book Now")}
       </button>

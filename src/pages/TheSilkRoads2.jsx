@@ -3,7 +3,7 @@ import SecondSection2 from "../components/TheSilkRoads/SecondSection2"
 
 function TheSilkRoads2() {
   return (
-    <div className="mt-[100px]">
+    <div className="pt-[110px] pb-[20px]">
       <FirstSection2/>
       <SecondSection2/>
     </div>

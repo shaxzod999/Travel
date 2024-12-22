@@ -5,10 +5,10 @@ import PreFooter from "../components/About/PreFooter";
 
 function About() {
   return (
-    <div className="mt-[100px]">
+    <div className="pt-[110px] pb-[20px]">
       <FirstSection />
       <SecondSection />
-      <PreFooter/>
+      <PreFooter />
     </div>
   );
 }
