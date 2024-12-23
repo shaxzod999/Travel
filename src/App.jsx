@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import TheSilkRoads from "./pages/TheSilkRoads";
 import Card from "./components/TheSilkRoads/Card";
-import Stories from "./pages/TheSilkRoads2";
+import Contact from "./pages/Contact";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
@@ -33,9 +33,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/About/" element={<About />} />
-        <Route path="/Stories/" element={<Stories />} />
-        <Route path="/The-Silk-Roads/Card/" element={<Card />} />
-        <Route path="/The-Silk-Roads/" element={<TheSilkRoads />} />
+        <Route path="/Contact/" element={<Contact />} />
+        <Route path="/Services/Card/" element={<Card />} />
+        <Route path="/Services/" element={<TheSilkRoads />} />
       </Routes>
       <Footer />
     </>

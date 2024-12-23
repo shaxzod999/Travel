@@ -36,7 +36,7 @@ a {
   background-position: center;
   background-size: cover;
 }
-ul li:hover {
+.nav ul li:hover {
   color: rgb(215, 116, 49);
 }
 

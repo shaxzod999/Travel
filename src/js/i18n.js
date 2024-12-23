@@ -9,7 +9,7 @@ i18n.use(initReactI18next).init({
         "Book Now": "Book Now",
         //Navbar
         Home: "Home",
-        "The Silk Roads": "The Silk Roads",
+        "Services": "Services",
         "The Highlands": "The Highlands",
         Stories: "Stories",
         "The Bazaar": "The Bazaar",
@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
         "Book Now": "Забронировать",
         //Navbar
         Home: "Главная",
-        "The Silk Roads": "Шелковый путь",
+        "Services": "Услуги",
         "The Highlands": "Нагорье",
         Stories: "Истории",
         "The Bazaar": "Базар",
@@ -37,7 +37,7 @@ i18n.use(initReactI18next).init({
         "Book Now": "Bron qilish",
         //Navbar
         Home: "Bosh sahifa",
-        "The Silk Roads": "Ipak yo'llari",
+        "Services": "Xizmatlar",
         "The Highlands": "Tog'lar",
         Stories: "Hikoyalar",
         "The Bazaar": "Bozor",

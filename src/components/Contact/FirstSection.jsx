@@ -25,7 +25,7 @@ function FirstSection() {
               type="video/mp4"
             />
           </video>
-          LOgo
+          Logo
         </div>
       </div>
     </section>

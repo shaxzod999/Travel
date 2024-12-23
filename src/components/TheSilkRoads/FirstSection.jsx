@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../assets/The-Silk-Roads-img/Image-empty-state.avif";
-import img2 from "../../assets/The-Silk-Roads-img/1-1Z420155K1412.png";
+// import img2 from "../../assets/The-Silk-Roads-img/1-1Z420155K1412.png";
 import { Link } from "react-router-dom";
 
 function FirstSection() {
@@ -11,30 +11,37 @@ function FirstSection() {
           Silk Road Outposts
         </h1>
         <div>
-          <div className="w-full h-[auto] sm:w-[600px] sm:h-[430px] flex flex-col sm:flex-row items-center justify-start relative">
-            <img
-              className="w-full h-[auto] sm:w-[500px] sm:h-[400px]"
-              src={img1}
-              alt=""
-            />
-            <div className="w-full sm:w-[350px] h-[300px] bg-[#fff] p-[5px] sm:p-[39px] flex flex-col items-start justify-between text-start sm:absolute right-[0] z-[2]">
-              <h2 className="text-[22px] font-semibold">Agra</h2>
-              <p className="text-[11px] text-start font-thin leading-[22px]">
-                The city and capitol of the Mughals, a vast empire <br />{" "}
-                stretching across South Asia at the end of the <br /> Middle
-                Ages. Architectural masterpieces of Agra <br /> still bring
-                travelers from near and far, particularly <br /> the India’s
-                most famous building - the Taj Mahal.
-              </p>
-              <button className="w-[116px] bg-[#fff] border border-[#BA972B] hover:border-none hover:bg-[blue] hover:text-[#fff] duration-700 text-[#BA972B] h-[39px] flex justify-center items-center">
-                Explore
-              </button>
+          <Link to={"/Services/Card/"}>
+            <div className="w-full h-[auto] sm:w-[600px] sm:h-[430px] flex flex-col sm:flex-row items-center justify-start relative">
+              <img
+                className="w-full h-[auto] sm:w-[500px] sm:h-[400px]"
+                src={img1}
+                alt=""
+              />
+              <div className="w-full sm:w-[350px] h-[300px] bg-[#fff] p-[5px] sm:p-[39px] flex flex-col items-start justify-between text-start sm:absolute right-[0] z-[2]">
+                <div className="w-full flex items-start justify-between">
+                  <h2 className="text-[22px] font-semibold">Agra</h2>
+                  <h4 className="p-[5px] bottom-[0] right-[0] bg-[#BA972B] text-[14px] font-bold text-[#fff]">
+                    from $700
+                  </h4>
+                </div>
+                <p className="text-[11px] text-start font-thin leading-[22px]">
+                  The city and capitol of the Mughals, a vast empire <br />{" "}
+                  stretching across South Asia at the end of the <br /> Middle
+                  Ages. Architectural masterpieces of Agra <br /> still bring
+                  travelers from near and far, particularly <br /> the India’s
+                  most famous building - the Taj Mahal.
+                </p>
+                <button className="w-[116px] bg-[#fff] border border-[#BA972B] hover:border-none hover:bg-[blue] hover:text-[#fff] duration-700 text-[#BA972B] h-[39px] flex justify-center items-center">
+                  Explore
+                </button>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
-      <div className="w-full min-h-[100px] container mx-[auto] px-[20px] flex flex-col gap-[40px] items-center justify-center">
-        <Link to={"/The-Silk-Roads/Card/"}>
+      {/* <div className="w-full min-h-[100px] container mx-[auto] px-[20px] flex flex-col gap-[40px] items-center justify-center">
+        <Link to={"/Services/Card/"}>
           <div className="w-full h-[auto] sm:w-[360px] sm:h-[450px] bg-[#F4F4F4] font-sans">
             <div className="w-full h-[230px] relative">
               <img className="w-full h-[100%]" src={img2} alt="" />
@@ -59,7 +66,7 @@ function FirstSection() {
             </div>
           </div>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }

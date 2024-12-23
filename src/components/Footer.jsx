@@ -9,24 +9,39 @@ function Footer() {
   const { t, i18n } = useTranslation(); // Access i18n from useTranslation
 
   return (
-    <footer className="h-[280px] pt-[1px]">
-      <div className="w-full container mx-[auto] flex flex-col items-center justify-center">
+    <footer className="h-[280px] pt-[10px]">
+      <div className="w-full container mx-[auto] flex flex-col gap-[30px] items-center justify-center">
         <div className="w-full flex gap-[15px] items-center justify-center">
-          <Link to={'/About/'} className="flex items-center justify-center footer-btn">
+          <Link
+            to={"/"}
+            className="flex items-center justify-center footer-btn"
+          >
+            <button className="font-thin">Home</button>
+          </Link>
+          <Link
+            to={"/About/"}
+            className="flex items-center justify-center footer-btn"
+          >
             <button className="font-thin">About</button>
           </Link>
-          <Link to={'/Stories/'} className="flex items-center justify-center footer-btn">
-            <button className="font-thin">Stories</button>
+          <Link
+            to={"/Services/"}
+            className="flex items-center justify-center footer-btn"
+          >
+            <button className="font-thin">Services</button>
           </Link>
-          <Link to={'/'} className="flex items-center justify-center footer-btn">
-            <button className="font-thin">Explore</button>
+          <Link
+            to={"/Contact/"}
+            className="flex items-center justify-center footer-btn"
+          >
+            <button className="font-thin">Contact</button>
           </Link>
         </div>
         <div>Logo</div>
       </div>
       <button
         onClick={openModal}
-        className="w-[150px] py-[10px] px-[20px] text-[16px] cursor-pointer rounded-[5px] bg-blue-500 fixed bottom-[150px] right-[0] md:right-[100px] z-[999] text-[#fff]"
+        className="w-[150px] py-[10px] px-[20px] text-[16px] cursor-pointer rounded-[5px] bg-[#BA972B] fixed bottom-[150px] right-[0] md:right-[100px] z-[999] text-[#fff]"
       >
         {t("Book Now")}
       </button>
