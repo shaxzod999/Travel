@@ -25,7 +25,7 @@ function FirstSection() {
               type="video/mp4"
             />
           </video>
-          <h4 className="text-[60px] font-bold text-[#fff]">The Wonders of the Silk Roads</h4>
+          <h4 className="text-[30px] text-center sm:text-[60px] font-bold text-[#fff]">The Wonders of the Silk Roads</h4>
         </div>
       </div>
     </section>
