@@ -56,7 +56,7 @@ function Card() {
         <h4 className="w-full text-start text-[12px] text-[#A62F11] font-black">
           Комфорт:
         </h4>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-30px]">
+        <p className="w-full text-start text-[10px] sm;text-[14px] text-[#555] leading-[24px] mt-[-30px]">
           <span className="font-bold underline">Проживание.</span> В нескольких
           местах, размещение 2-местное: <br /> В Хиве в Reikartz Khiva Residence
           3 * или аналогичном (1 ночь). <br /> В Бухаре в Dera Hotel 3 * или
@@ -64,33 +64,33 @@ function Card() {
           * или аналогичном (2 ночи). <br /> В Ташкенте в Hotel Velara 3 * или
           аналогичном (1 ночь).
         </p>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-40px]">
+        <p className="w-full text-start text-[10px] sm:text-[14px] text-[#555] leading-[24px] mt-[-40px]">
           <span className="font-bold underline">Питание.</span>В стоимость
           включены 7 завтраков. Остальное питание оплачивается отдельно.
         </p>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-40px]">
+        <p className="w-full text-start text-[10px] sm:text-[14px] text-[#555] leading-[24px] mt-[-40px]">
           <span className="font-bold underline">Транспорт.</span>33-местный
           автобус King long или аналогичный.
         </p>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-40px]">
+        <p className="w-full text-start text-[10px] sm:text-[14px] text-[#555] leading-[24px] mt-[-40px]">
           <span className="font-bold underline">Дети.</span>Возможно участие с
           детьми от 10 лет.
         </p>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-40px]">
+        <p className="w-full text-start text-[10px] sm:text-[14px] text-[#555] leading-[24px] mt-[-40px]">
           <span className="font-bold underline">Виза.</span> Не нужна.
         </p>
         <h2 className="w-full text-start text-[20px] text-[#555] leading-[24px] mt-[-40px] font-bold">
           Программа
         </h2>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-40px]">
+        <p className="w-full text-start text-[10px] sm:text-[14px] text-[#555] leading-[24px] mt-[-40px]">
           <span className="font-bold underline">Начало тура:</span>
           Ургенч, аэропорт, утро
         </p>
-        <p className="w-full text-start text-[14px] text-[#555] leading-[24px] mt-[-40px]">
+        <p className="w-full text-start text-[10px] sm:text-[14px] text-[#555] leading-[24px] mt-[-40px]">
           <span className="font-bold underline">Финиш:</span>
           Ташкент, аэропорт, утро
         </p>
-        <div className="w-full h-[470px] flex gap-[20px] items-center justify-center mt-[-30px]">
+        <div className="w-full h-[auto] sm:h-[470px] flex gap-[20px] items-center justify-center mt-[-30px]">
           <div className="w-[50%] h-full flex flex-col items-center justify-center">
             <img className="w-full h-full" src={img1} alt="" />
           </div>
@@ -98,7 +98,7 @@ function Card() {
             <img className="w-full h-full" src={img2} alt="" />
           </div>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 1</h4>
           <h4 className="flex gap-[5px]">
             Kashgar{" "}
@@ -109,7 +109,7 @@ function Card() {
             />
           </h4>
         </div>
-        <div className="text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">
             Переезд в Хиву, экскурсия по историческому центру
           </h4>
@@ -125,7 +125,7 @@ function Card() {
             После — свободное время и отдых в гостинице.
           </p>
         </div>
-        <div className="w-full h-[500px] flex gap-[20px] items-center justify-center mt-[-60px]">
+        <div className="w-full h-[auto] sm:h-[500px] flex gap-[20px] items-center justify-center mt-[-60px]">
           <div className="w-[50%] h-full flex flex-col items-center justify-center">
             <img className="w-full h-full" src={img3} alt="" />
           </div>
@@ -133,7 +133,7 @@ function Card() {
             <img className="w-full h-full" src={img4} alt="" />
           </div>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 2</h4>
           <h4 className="flex gap-[5px]">
             Kashgar
@@ -145,7 +145,7 @@ function Card() {
             Karakul Lake
           </h4>
         </div>
-        <div className="text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">Переезд в Бухару</h4>
           <p>
             Утром после завтрака отправляемся в Бухару. Путь предстоит долгий —
@@ -156,7 +156,7 @@ function Card() {
             всемирного наследия ЮНЕСКО.
           </p>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 3</h4>
           <h4 className="flex gap-[5px]">
             Kashgar
@@ -168,7 +168,7 @@ function Card() {
             Urumqi
           </h4>
         </div>
-        <div className="text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">Достопримечательности Бухары</h4>
           <p>
             В этот день вы познакомитесь с главными достопримечательностями
@@ -185,7 +185,7 @@ function Card() {
             и комплекс Ляби-Хауз. Побываем в торговых куполах, сохранившихся
             со времён Средневековья.
           </p>
-          <div className="w-full h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
+          <div className="w-full h-[auto] sm:h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
             <div className="w-[50%] h-full flex flex-col items-center justify-center">
               <img className="w-full h-full" src={img5} alt="" />
             </div>
@@ -194,7 +194,7 @@ function Card() {
             </div>
           </div>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 4</h4>
           <h4 className="flex gap-[5px]">
             Kashgar
@@ -206,7 +206,7 @@ function Card() {
             Urumqi
           </h4>
         </div>
-        <div className="text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">
             Переезд в Самарканд, экскурсия по городу
           </h4>
@@ -216,7 +216,7 @@ function Card() {
             Улугбека, самое позднее строение площади — медресе Тилля-Кари
             17 века — и медресе Шердор. Заглянем в усыпальницу Тимура Гур-Эмир.
           </p>
-          <div className="w-full h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
+          <div className="w-full h-[auto] sm:h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
             <div className="w-[50%] h-full flex flex-col items-center justify-center">
               <img className="w-full h-full" src={img7} alt="" />
             </div>
@@ -225,7 +225,7 @@ function Card() {
             </div>
           </div>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 5</h4>
           <h4 className="flex gap-[5px]">
             Kashgar
@@ -237,7 +237,7 @@ function Card() {
             Urumqi
           </h4>
         </div>
-        <div className="text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">Продолжение знакомства с Самаркандом</h4>
           <p>
             Сегодня продолжим исследовать шедевры архитектуры Самарканда.
@@ -247,7 +247,7 @@ function Card() {
             фабрике «Мерос», где ремесленники вручную изготавливают знаменитую
             самаркандскую бумагу по старинным технологиям.
           </p>
-          <div className="w-full h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
+          <div className="w-full h-[auto] sm:h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
             <div className="w-[50%] h-full flex flex-col items-center justify-center">
               <img className="w-full h-full" src={img9} alt="" />
             </div>
@@ -256,7 +256,7 @@ function Card() {
             </div>
           </div>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 6</h4>
           <h4 className="flex gap-[5px]">
             Kashgar
@@ -268,7 +268,7 @@ function Card() {
             Urumqi
           </h4>
         </div>
-        <div className="text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">Переезд в Ташкент, экскурсия по городу</h4>
           <p>
             В этот день отправляемся в столицу Узбекистана. В пути — 4-5 часов,
@@ -282,7 +282,7 @@ function Card() {
             Прогуляемся по самому большому рынку Узбекистана «Чорсу», известному
             с древних времён. Посетим самые красивые станции метро.
           </p>
-          <div className="w-full h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
+          <div className="w-full h-[auto] sm:h-[500px] flex gap-[20px] items-center justify-center mt-[20px]">
             <div className="w-[50%] h-full flex flex-col items-center justify-center">
               <img className="w-full h-full" src={img11} alt="" />
             </div>
@@ -291,7 +291,7 @@ function Card() {
             </div>
           </div>
         </div>
-        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[14px]">
+        <div className="my-[-20px] w-full rounded-[6px] bg-[#F4F4F4] text-[#545454] font-bold p-[15px] flex gap-[10px] items-center justify-start text-[10px] sm:text-[14px]">
           <h4>Day 7</h4>
           <h4 className="flex gap-[5px]">
             Kashgar
@@ -303,12 +303,12 @@ function Card() {
             Urumqi
           </h4>
         </div>
-        <div className="w-full text-[#545454] text-[14px] leading-[25px] mb-[30px]">
+        <div className="w-full text-[#545454] text-[10px] sm:text-[14px] leading-[25px] mb-[30px]">
           <h4 className="font-bold">Отъезд</h4>
           <p>После завтрака — трансферт в аэропорт Ташкента.</p>
         </div>
         <div className="w-full mt-[-50px]">
-          <ul className="text-[#545454] text-[14px] leading-[25px]">
+          <ul className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px]">
             <li className="font-bold">Что включено в цену</li>
             <li>Проживание</li>
             <li>Завтраки</li>
@@ -316,8 +316,8 @@ function Card() {
             <li>Трансфер из/в аэропорт (групповой)</li>
             <li>Экскурсии по программе</li>
           </ul>
-          <h4 className="text-[#545454] text-[14px] leading-[25px] font-bold">Оплачивается отдельно</h4>
-          <ul className="text-[#545454] text-[14px] leading-[25px]">
+          <h4 className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px] font-bold">Оплачивается отдельно</h4>
+          <ul className="text-[#545454] text-[10px] sm:text-[14px] leading-[25px]">
             <li>Обеды и ужины</li>
             <li>Входные билеты на объекты экскурсий</li>
             <li>Доплата за индивидуальный трансфер (на седане — $25 за машину в одну сторону; на минивэне — $35 за машину в одну сторону)</li>
@@ -326,7 +326,7 @@ function Card() {
             <li>Сборы за фото- и видеосъёмку в музеях, где это необходимо</li>
             <li>Медицинская страховка</li>
           </ul>
-          <h3 className="font-bold text-[#545454] text-[32px]">Стоимость тура в даты с ноября по декабрь — $700</h3>
+          <h3 className="font-bold text-[#545454] tex-[25px] sm:text-[32px]">Стоимость тура в даты с ноября по декабрь — $700</h3>
         </div>
       </div>
     </div>

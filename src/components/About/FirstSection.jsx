@@ -1,7 +1,16 @@
 import React from "react";
 import img1 from "../../assets/About-section-img/86e751_03ca10e424af4fd1bc6bfb155508ab8c~mv2.avif";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function FirstSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="w-full h-[auto] text-[#414141]">
       <div className="w-full h-[auto] lg:h-[700px] container mx-[auto] px-[20px] flex lg:flex-row flex-col items-center justify-center relative">
@@ -10,8 +19,13 @@ function FirstSection() {
           src={img1}
           alt=""
         />
-        <div className="w-full lg:w-[760px] h-[auto] lg:h-[520px] bg-[#fff] lg:absolute bottom-[0] lg:right-[20px] z-[2] flex flex-col gap-[20px] items-center justify-center text-center lg:text-start py-[30px]">
-          <h1 className="text-[13px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-bold mb-[10px]">Step Into Far Lands</h1>
+        <div
+          data-aos="fade-left"
+          className="w-full lg:w-[760px] h-[auto] lg:h-[520px] bg-[#fff] lg:absolute bottom-[0] lg:right-[20px] z-[2] flex flex-col gap-[20px] items-center justify-center text-center lg:text-start py-[30px]"
+        >
+          <h1 className="text-[13px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-bold mb-[10px]">
+            Step Into Far Lands
+          </h1>
           <p className="text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] lg:leading-[26px] font-extralight">
             whether it be into the highest peaks or on the ancient highways, and{" "}
             <br />

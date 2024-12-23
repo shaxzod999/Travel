@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function SecondSection() {
   const [showOptions, setShowOptions] = useState(false);
@@ -11,10 +14,20 @@ function SecondSection() {
     setShowOptions(false);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      delay: 100,
+    });
+  }, []);
+
   return (
     <section className="w-full py-16 from-blue-50 to-blue-100 text-gray-700">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="bg-white shadow-lg rounded-lg p-8">
+        <div
+          data-aos="zoom-in-up"
+          className="bg-white shadow-lg rounded-lg p-8"
+        >
           <h2 className="text-2xl font-bold mb-6 text-gray-800">
             Sayohat ma'lumotlarini kiriting
           </h2>

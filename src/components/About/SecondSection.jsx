@@ -1,11 +1,20 @@
 import React from "react";
 import img1 from "../../assets/About-section-img/86e751_76c47b4de43342c79efa04244fdd675a~mv2.avif";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function SecondSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="w-full h-[auto] text-[#414141]">
       <div className="w-full h-[auto] lg:h-[700px] container mx-[auto] px-[20px] flex lg:flex-row flex-col-reverse items-center justify-center relative">
-        <div className="w-full lg:w-[760px] h-[auto] lg:h-[520px] bg-[#fff] lg:absolute top-[0] lg:left-[20px] z-[2] flex flex-col gap-[20px] items-center justify-center text-center lg:text-start py-[30px]">
+        <div data-aos="fade-right" className="w-full lg:w-[760px] h-[auto] lg:h-[520px] bg-[#fff] lg:absolute top-[0] lg:left-[20px] z-[2] flex flex-col gap-[20px] items-center justify-center text-center lg:text-start py-[30px]">
           <h1 className="text-[13px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-bold mb-[10px]">
             We Came as Strangers. We Left As Family.
           </h1>
