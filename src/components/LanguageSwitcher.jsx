@@ -85,12 +85,10 @@ const LanguageSwitcher = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Standart tilni olish yoki "uz"ni tanlash
   const defaultLanguage = localStorage.getItem("appLanguage") || "uz";
   const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
 
   useEffect(() => {
-    // URL'dagi tilni aniqlash
     const searchParams = new URLSearchParams(location.search);
     const lang = searchParams.get("lang");
 

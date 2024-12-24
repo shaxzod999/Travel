@@ -123,13 +123,13 @@ footer {
   justify-content: center;
 }
 .container1 {
-  height: 500px;
+  height: 80vh;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
 }
 .card {
-  width: 93px;
+  width: 140px;
   border-radius: 0.75rem;
   background-size: cover;
   cursor: pointer;
@@ -170,6 +170,7 @@ footer {
   transform: translateY(30px);
   transition-delay: 0.3s;
   transition: all 0.3s ease;
+  margin-left: 30px;
 }
 
 .description p {

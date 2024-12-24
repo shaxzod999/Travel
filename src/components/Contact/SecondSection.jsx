@@ -32,14 +32,13 @@ function SecondSection() {
             Sayohat ma'lumotlarini kiriting
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Tur Selection */}
             <div className="relative">
               <label htmlFor="tur" className="font-medium text-gray-600">
                 Tur
               </label>
               <input
                 id="tur"
-                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="block w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 type="text"
                 value={selectedValue}
                 placeholder="Tur tanlang"
@@ -61,27 +60,25 @@ function SecondSection() {
               )}
             </div>
 
-            {/* Name Input */}
             <div>
               <label htmlFor="name" className="font-medium text-gray-600">
                 Ism va familiya
               </label>
               <input
                 id="name"
-                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="block w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 type="text"
                 placeholder="Ismingizni kiriting"
               />
             </div>
 
-            {/* People Input */}
             <div>
               <label htmlFor="people" className="font-medium text-gray-600">
                 Necha kishi ketadi?
               </label>
               <input
                 id="people"
-                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="block w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 type="number"
                 min="1"
                 placeholder="Masalan: 5"
@@ -89,7 +86,6 @@ function SecondSection() {
               />
             </div>
 
-            {/* Phone Input */}
             <div className="w-full">
               <label htmlFor="phone" className="font-medium text-gray-600">
                 Telefon raqami
@@ -100,7 +96,7 @@ function SecondSection() {
                 </span>
                 <input
                   id="phone"
-                  className="w-full flex-1 border border-gray-300 px-4 py-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="block w-full flex-1 border border-gray-300 px-4 py-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                   type="tel"
                   placeholder="(XX) XXX-XX-XX"
                   pattern="\([0-9]{2}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
@@ -111,7 +107,6 @@ function SecondSection() {
             </div>
           </div>
 
-          {/* Submit Button */}
           <div className="mt-6">
             <button className="w-full bg-[#BA972B] text-white py-3 rounded-md font-medium text-lg transition">
               Yuborish
